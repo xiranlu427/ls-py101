@@ -1,0 +1,11 @@
+{
+    "welcome": "Welcome to Calculator!",
+    "invalid_number": "Hmm... that doesn't look like a valid number.",
+    "operation_q": "What operation would you like to perform?\n1. Add, 2. Substract, 3. Multiply, 4. Divide",
+    "number1_q": "What's the first number?",
+    "number2_q": "What's the second number?",
+    "invalid_operation": "You must choose 1, 2, 3, or 4",
+    "repeat_q": "Would you like to perform another operation? (y/n)",
+    "result": "The result is {output}",
+    "division_by_zero": "Error: Cannot divide by zero."
+}
