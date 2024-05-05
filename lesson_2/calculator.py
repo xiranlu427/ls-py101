@@ -5,30 +5,52 @@ import sys
 # Perform the operation on the two numbers.
 # Print the result to the terminal.
 
-print("Welcome to Calculator!")
+def prompt(message):
+    print(f"==> {message}")
 
+def invalid_number(number_str):
+    try:
+        int(number_str)
+    except ValueError:
+        return True
+    return False
 
-number1 = int(input("What's the first number?\n"))
-number2 = int(input("What's the second number?\n"))
+prompt("Welcome to Calculator!")
 
-print("What operation would you like to perform?\nEnter " 
+prompt("What's the first number?")
+number1 = input()
+
+while invalid_number(number1):
+    prompt("Hmm... that doesn't look like a valid number.")
+    number1 = input()
+
+prompt("What's the second number?")
+number2 = input()
+
+while invalid_number(number2):
+    prompt("Hmm... that doesn't look like a valid number.")
+    number2 = input()
+
+prompt("What operation would you like to perform?\nEnter "
       '"1" for Add, "2" for Substract, "3" for Multiply, "4" for Divide')
-
 operation = input()
+
+operations = ['1', '2', '3', '4']
+while operation not in operations:
+    prompt("You must choose 1, 2, 3, or 4")
+    operation = input()
 
 match operation:
     case "1":
-        output = number1 + number2
+        output = int(number1) + int(number2)
     case "2":
-        output = number1 - number2
+        output = int(number1) - int(number2)
     case "3":
-        output = number1 * number2
+        output = int(number1) * int(number2)
     case "4":
-        if number2 != 0:
-            output = number1 / number2
+        if int(number2) != 0:
+            output = int(number1) / int(number2)
         else:
             sys.exit("Cannot divide by 0.")
-    case _:
-        sys.exit("Invaid operation.")
-      
-print(f"The result is: {output}")
+
+prompt(f"The result is: {output}")
