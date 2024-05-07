@@ -1,0 +1,11 @@
+{
+    "welcome": "Welcome to the car loan calculator!",
+    "amount_prompt": "Please enter the loan amount in dollars, e.g. \"100000\" for $100,000:",
+    "invalid_number": "You must enter a positive number.",
+    "interest_prompt": "Please enter the Annual Percentage Rate (APR), e.g. \"12\" for 12%:",
+    "duration_prompt": "Please enter the loan duration in years (and months, if applicable) and separate two numbers with a space, e.g. \"2\" for 2 years, \"2 6\" for 2 years and 6 months, \"0 18\" for 18 months:",
+    "invalid_duration": "Invalid input. Please enter at least one positive number.",
+    "result": "Your monthly payment is ${output:.2f} for a loan term of {duration} months with an annual percentage rate of {interest}%.",
+    "another_calculation": "Would you like to perform another calculation? (y/n)",
+    "invalid_answer": "Please enter \"y\" or \"n\"."
+}
