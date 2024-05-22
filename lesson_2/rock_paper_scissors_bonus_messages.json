@@ -3,7 +3,7 @@
     "intro": "Today you will play against the computer, and the first player who reaches three wins will become the grand winner. Good luck!",
     "round": "========== Round {round_num} ==========",
     "prompt_user_choice": "Please choose one from the following: {options}.",
-    "prompt_instruction": "Enter \"r\" for \"rock\", \"p\" for \"paper\", \"s\" for \"scissors\", \"sp\" for \"spock\", or \"l\" for \"lizard\".",
+    "prompt_instruction": "Enter \"r\" for \"rock\", \"p\" for \"paper\", \"sc\" for \"scissors\", \"sp\" for \"spock\", or \"l\" for \"lizard\".",
     "invalid_choice": "That's not a valid choice.",
     "display_choices": "You chose \"{user_choice}\", computer chose \"{computer_choice}\".",
     "user_wins": "You win!",
@@ -15,6 +15,6 @@
     "user_winner": "The match is over. You won {user_score} - {computer_score}. Congratulations!",
     "computer_winner": "The match is over. Computer won {computer_score} - {user_score}.",
     "invalid_yn_answer": "Please enter \"y\" or \"n\".",
-    "prompt_play_again": "Do you want to play again? (y/n)",
+    "prompt_play_again": "Do you want to play another game? (y/n)",
     "end_game": "Thank you for playing our game. Hope you had a good time!"
 }
